@@ -1,0 +1,8 @@
+body{
+    background-color: #191414;
+}
+.form-control:focus {
+    border-color: #1db954;
+    border-width: 00.1rem;
+    box-shadow: 0 0 0 0.2rem #0e5c29;
+} 

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if status==1 %}
+
+<br/>
+<div class='container'>
+    <h1 style="color: aliceblue;">Your Song Is Ready</h1>
+    <form action="{{url_for('download')}}" method="post">
+        <br/>
+        <input class="btn btn-outline-success" type="submit" value="Download">
+    </form>
+    <br/>
+    <a href="{{url_for('song',status=0)}}"><button class="btn btn-outline-success" type="button">Back</button></a>
+</div>
+
+
+{% else %}
+<br/>
+<br/>
+<br/>
+<br/>
+<div class='container'>
+    <div class="text-center">
+        <img src="/static/spotify.png" class="img-fluid" alt="logo">
+        <br/>
+        <br/>
+        <h1 style="color: aliceblue;">Download Spotify Songs</h1>
+        <br/>
+      
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+        <h6 style="color: aliceblue; text-align: left;">Paste Song Link:</h6>
+        {{ form.song_link(class="form-control") }}
+        <br/>
+        {{ form.submit(class="btn btn-outline-success") }}
+
+    </form>
+    </div>
+</div>
+
+{% endif %}
+{% endblock %}
