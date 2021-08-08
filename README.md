@@ -9,3 +9,10 @@ flask run -h ' i.p of machine in which you are running the script '
 
 without inverted commas
 
+!!!ATTENTION!!!
+
+update spotdl and pytube if facing http error and import error from pytube
+Make sure you have ffmpeg in your system,Follow this link to download:
+
+https://windowsloop.com/install-ffmpeg-windows-10/
+
