@@ -1,4 +1,7 @@
-# Spotify-Music-Downloader-WebApp
+<h1 align="center">Spotify-Music-Downloader-WebApp</h1>
+
+![image](https://github.com/programmingninjas/Spotify-Music-Downloader-WebApp/blob/main/static/spotify.png)
+
 * Now Download Spotify Songs From Anywhere With This Flask WebApp.
 
 * You can use this in phone as well just host it over wifi.
